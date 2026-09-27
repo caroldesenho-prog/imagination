@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Fiction</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #0b0e14;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .viewer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+  }
+  .fallback {
+    color: #cbd2de;
+    text-align: center;
+    padding: 2rem;
+  }
+  .fallback a {
+    color: #7aa2ff;
+  }
+</style>
+</head>
+<body>
+  <div class="viewer">
+    <iframe src="POSTS.pdf" title="Design Fiction PDF">
+      <p class="fallback">
+        Seu navegador não conseguiu exibir o PDF.
+        <a href="POSTS.pdf">Clique aqui para abrir o arquivo</a>.
+      </p>
+    </iframe>
+  </div>
+</body>
+</html>
